@@ -9,3 +9,10 @@ docker build -t fedora_coarray https://github.com/gronki/opencoarrays-fortran-fe
 ```bash
 docker run -it -v "$PWD":/work fedora_coarray bash
 ```
+
+### Compile and run a program
+
+```bash
+caf program.f90 -o program
+mpiexec ./program
+```
